@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Michael Miller">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./images/todo.ico">
+  <link rel="stylesheet" href="./css/output.css">
+  <title>Make A Note App</title>
+</head>
+<body class="bg-[#f8f8f8]">
+  <header class="m-6">
+    <h1 class="text-center text-4xl">Make A Note</h1>
+  </header>
+  <main>
+    <p id="msgError" class="text-red-500 text-sm font-semibold text-center"></p>
+    <div class="w-full">
+      <form class="flex flex-col w-3/4 ml-auto mr-auto md:w-1/3 lg:w-1/4">
+        <label for="note">Title:</label>
+        <input type="text" name="noteName" id="noteName" placeholder="Enter note title..." class="border-2 border-orange-500 mb-6 p-2 rounded-lg">
+        <label for="note">Note:</label>
+        <textarea name="note" id="noteBody" cols="30" rows="10" placeholder="Enter note info..." class="border-2 border-orange-500 resize-none mb-6 p-2 rounded-lg whitespace-pre-wrap"></textarea>
+        <button type="submit" id="submitButton" class="bg-orange-500 w-1/4 py-2 rounded-xl text-white font-semibold">Submit</button>
+      </form>
+    </div>
+    <div id="notesArea" class="mt-6 w-3/4 p-2 rounded-lg ml-auto mr-auto md:w-1/3 lg:w-1/4">
+      <!-- Notes added here -->
+    </div>
+  </main>
+  <script src="./javascript/noteFunctions.js"></script>
+</body>
+</html>
